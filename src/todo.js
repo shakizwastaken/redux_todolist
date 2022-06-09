@@ -1,6 +1,7 @@
 class todo {
   constructor(content) {
-    this.id = "#" + Math.floor(Math.random() * 1000);
+    this.id = generateId();
+    console.log(this.id);
     this.content = content;
     this.isDone = false;
   }
@@ -8,6 +9,10 @@ class todo {
   toggleIsDone() {
     this.isDone = !this.isDone;
   }
+}
+
+function generateId() {
+  return `#${Math.floor(Math.random() * 100)}`;
 }
 
 export function getTodoFromId(todos, id) {

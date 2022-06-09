@@ -1,0 +1,13 @@
+.addTodo-container {
+  display: flex;
+  justify-content: flex-end;
+
+  width: fit-content;
+
+  padding: 15px;
+  gap: 10px;
+}
+
+.addTodo-container button {
+  font-size: 0.8rem;
+}
